@@ -1,0 +1,23 @@
+* Utilizar Git Bash (Windows)
+
+Passos para gerar e utilizar SSH
+
+1. Comando para gerar e salvar chave ssh
+    ssh-keygen -t ed25519 -C <emailGithub>
+
+2. Entrar na pasta .ssh
+    cd <caminho>
+
+3. Mostrar chave no terminal
+    cat id_ed25519.pub
+
+4. Copiar chave e colar no GitHub
+
+5. Inicializar o ssh keygen
+    eval $(ssh-agent -s)
+
+6. Entregar chave para ssh keygen
+    ssh-add <caminho à chave privada>
+
+7. Agora é só utilizar
+    * Quando for clonar repositórios no GitHub, se atentar para pegar o link formato SSH
